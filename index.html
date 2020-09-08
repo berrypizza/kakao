@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kakao clone</title>
@@ -9,6 +10,7 @@
     <div id="status-bar">
       <div class="statusbar__column">
         <span>No Service</span>
+        <i class="fas fa-wifi"></i>
         <!-- wifi icon-->
       </div>
       <div class="statusbar__column">
@@ -16,9 +18,30 @@
       </div>
       <div class="statusbar__column">
         <span>77%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
         <!-- battery icon -->
+        <i class="fas fa-bolt"></i>
         <!-- lightning icon -->
       </div>
     </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">welcome to kokoa clone</h1>
+      <p class="welcome-header__text">
+        if you have a kokoa account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form>
+      <input type="text" placeholder="Emaril or phone number" />
+      <input type="text" placeholder="Password" />
+      <input type="submit" value="Log in" />
+      <a href="#">Find kokoa account or password</a>
+    </form>
+
+    <script
+      src="http://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
