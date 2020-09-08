@@ -1,0 +1,29 @@
+#status-bar {
+  display: flex;
+  padding: 5px 7px;
+}
+
+.statusbar__column:first-child span {
+  margin-right: 5px;
+}
+
+/*여기서부터 3가지 아이탬 가운데 정렬*/
+.statusbar__column {
+  width: 33%;
+}
+
+.statusbar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.statusbar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* 정렬 여기까지 */
+
+.statusbar__column .fa-battery-three-quarters {
+  margin: 0 5px;
+}
