@@ -8,9 +8,12 @@
     <style>
       .bigbox {
         height: 500px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        position: relative;
       }
       .box {
         display: flex;
@@ -26,25 +29,40 @@
         color: rgba(0, 0, 0, 0.6);
         font-weight: 500;
 
+        position: absolute;
+
         text-decoration: none;
+      }
+
+      .x1 {
+        top: 100px;
+      }
+      .x2 {
+        bottom: 100px;
       }
 
       a {
         transition: all 0.3s ease-in-out;
+        margin-bottom: 50px;
       }
       a:active,
       a:hover {
-        box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.8);
+        box-shadow: 5px 5px 1px 1px rgba(247, 0, 255, 0.8);
         transform: translate(-1px, -1px);
 
-        border-right: 5px solid #918200;
-        border-bottom: 5px solid #918200;
+        color: rgba(133, 95, 116, 0.8);
+
+        border-right: 5px solid #4e4709;
+        border-bottom: 5px solid #4e4709;
       }
     </style>
   </head>
   <body>
     <div class="bigbox">
-      <a class="box" href="https://www.youtube.com/watch?v=LnRDPNaRV40">
+      <a class="box x1" href="https://www.youtube.com/watch?v=LnRDPNaRV40">
+        <h1>lullaby</h1>
+      </a>
+      <a class="box x2" href="index.html">
         <h1>hello fucker</h1>
       </a>
     </div>
