@@ -1,70 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .bigbox {
-        height: 500px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-      }
-      .box {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        height: 100px;
-        width: 300px;
-        background-color: var(--yellow);
-        border-radius: 20px;
-        text-transform: uppercase;
-        color: rgba(0, 0, 0, 0.6);
-        font-weight: 500;
-
-        position: absolute;
-
-        text-decoration: none;
-      }
-
-      .x1 {
-        top: 100px;
-      }
-      .x2 {
-        bottom: 100px;
-      }
-
-      a {
-        transition: all 0.3s ease-in-out;
-        margin-bottom: 50px;
-      }
-      a:active,
-      a:hover {
-        box-shadow: 5px 5px 1px 1px rgba(247, 0, 255, 0.8);
-        transform: translate(-1px, -1px);
-
-        color: rgba(133, 95, 116, 0.8);
-
-        border-right: 5px solid #4e4709;
-        border-bottom: 5px solid #4e4709;
-      }
-    </style>
+    <title>kakao clone</title>
   </head>
   <body>
-    <div class="bigbox">
-      <a class="box x1" href="https://www.youtube.com/watch?v=LnRDPNaRV40">
-        <h1>lullaby</h1>
-      </a>
-      <a class="box x2" href="index.html">
-        <h1>hello fucker</h1>
-      </a>
+    <div class="out__status-bar">
+      <div id="status-bar">
+        <div class="statusbar__column">
+          <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+          <!-- wifi icon-->
+        </div>
+        <div class="statusbar__column">
+          <span>16:15</span>
+        </div>
+        <div class="statusbar__column">
+          <span>77%</span>
+          <i class="fas fa-battery-three-quarters fa-lg"></i>
+          <!-- battery icon -->
+          <i class="fas fa-bolt"></i>
+          <!-- lightning icon -->
+        </div>
+      </div>
     </div>
+
+    <header class="screen-header">
+      <div class="screen-header__title">friends</div>
+      <div class="screen-header__icons">
+        <span>
+          <i class="fas fa-search fa-2x"></i>
+        </span>
+        <span>
+          <i class="fas fa-music fa-2x"></i>
+        </span>
+        <span>
+          <i class="fas fa-cog fa-2x"></i>
+        </span>
+      </div>
+    </header>
+
+    <a href="#" id="friends-display-link">
+      <i class="fas fa-info-circle"></i>
+      Friends' names display
+      <i class="fas fa-chevron-right xs"></i>
+    </a>
+
+    <main class="friend-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="img/as.jpeg" class="usuer-component__avatar--xl" />
+          <div class="user-component__text">
+            <h4 class="user-component__title">JO-JO</h4>
+            <!-- <h6 class="user-component__subtitle">what the heck i am</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+
+      <div class="friend-screen__channel">
+        <div class="friend-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up"></i>
+        </div>
+
+        <!--friend row .start.-->
+        <div class="friend-screen__row">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img src="img/jack.jpg" class="usuer-component__avatar--sm" />
+              <div class="user-component__text">
+                <h4 class="user-component__title--sm">Jack</h4>
+                <!-- <h6 class="user-component__subtitle">what the heck i am</h6> -->
+              </div>
+            </div>
+          </div>
+          <div class="friends-screen__row__side">
+            2
+            <i class="fas fa-chevron-right xs"></i>
+          </div>
+        </div>
+        <div class="friend-screen__row">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img src="img/elli.jpg" class="usuer-component__avatar--sm" />
+              <div class="user-component__text">
+                <h4 class="user-component__title--sm">Elli</h4>
+                <!-- <h6 class="user-component__subtitle">what the heck i am</h6> -->
+              </div>
+            </div>
+          </div>
+          <div class="friends-screen__row__side">
+            2
+            <i class="fas fa-chevron-right xs"></i>
+          </div>
+        </div>
+        <!--friend row .end.-->
+      </div>
+    </main>
+    <!-- user -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__a" href="#"><i class="fas fa-users fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__a" href="#">
+            <span class="nav__notification">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__a" href="#"><i class="fas fa-search fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__a" href="#">
+            <div class="nav__dotofellipsis"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="http://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
