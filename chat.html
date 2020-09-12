@@ -28,10 +28,13 @@
     </div>
 
     <header class="screen-header">
-      <div class="screen-header__title">friends</div>
+      <div class="screen-header__title">chats</div>
       <div class="screen-header__icons">
         <span>
           <i class="fas fa-search fa-2x"></i>
+        </span>
+        <span>
+            <i class="fas fa-comment-medical fa-2x"></i>
         </span>
         <span>
           <i class="fas fa-music fa-2x"></i>
@@ -42,44 +45,25 @@
       </div>
     </header>
 
-    <a href="#" id="friends-display-link">
-      <i class="fas fa-info-circle"></i>
-      Friends' names display
-      <i class="fas fa-chevron-right xs"></i>
-    </a>
+    
 
     <main class="friend-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img src="img/harry.jpg" class="usuer-component__avatar--xl" />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Harry</h4>
-            <!-- <h6 class="user-component__subtitle">what the heck i am</h6> -->
-          </div>
-        </div>
-        <div class="user-component__column"></div>
-      </div>
-
-      <div class="friend-screen__channel">
-        <div class="friend-screen__channel-header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-up"></i>
-        </div>
+      
 
         <!--friend row .start.-->
         <div class="friend-screen__row">
           <div class="user-component">
             <div class="user-component__column">
-              <img src="img/jack.jpg" class="usuer-component__avatar--sm" />
+              <img src="img/jack.jpg" class="usuer-component__avatar" />
               <div class="user-component__text">
-                <h4 class="user-component__title--sm">Jack</h4>
-                <!-- <h6 class="user-component__subtitle">what the heck i am</h6> -->
+                <h4 class="user-component__title">Jack</h4>
+                <h6 class="user-component__subtitle">what the heck i am</h6>
               </div>
             </div>
           </div>
-          <div class="friends-screen__row__side">
-            2
-            <i class="fas fa-chevron-right xs"></i>
+          <div class="friends-screen__row__side-for-chat">
+            <span class="friend-screen__row__time-message">22:05</span>
+            <span class="friend-screen-row__red-notification">7</span>
           </div>
         </div>
         <!--friend row .end.-->
@@ -87,16 +71,16 @@
         <div class="friend-screen__row">
           <div class="user-component">
             <div class="user-component__column">
-              <img src="img/elli.jpg" class="usuer-component__avatar--sm" />
+              <img src="img/elli.jpg" class="usuer-component__avatar" />
               <div class="user-component__text">
-                <h4 class="user-component__title--sm">Elli</h4>
-                <!-- <h6 class="user-component__subtitle">what the heck i am</h6> -->
+                <h4 class="user-component__title">Elli</h4>
+                <h6 class="user-component__subtitle">hungy....</h6>
               </div>
             </div>
           </div>
-          <div class="friends-screen__row__side">
-            2
-            <i class="fas fa-chevron-right xs"></i>
+          <div class="friends-screen__row__side-for-chat">
+            <span class="friend-screen__row__time-message">21:35</span>
+            <span class="friend-screen-row__red-notification">1</span>
           </div>
         </div>
         <!--friend row .end.-->
@@ -106,12 +90,14 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <a class="nav__a" href="#"><i class="fas fa-users fa-2x"></i></a>
+          <a class="nav__a" href="friends.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__a" href="chat.html">
+          <a class="nav__a" href="#">
             <span class="nav__notification">8</span>
-            <i class="far fa-comment fa-2x"></i>
+            <i class="fas fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">

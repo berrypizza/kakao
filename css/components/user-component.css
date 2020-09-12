@@ -22,7 +22,8 @@
 .user-component__subtitle {
   font-size: 17px;
   margin-top: 5px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
 }
 
 .usuer-component__avatar--xl {
@@ -41,4 +42,30 @@
 
 .user-component__title--sm {
   font-size: 15px;
+}
+
+.friends-screen__row__side-for-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.friend-screen__row__time-message {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
+
+.friend-screen-row__red-notification {
+  margin-top: 5px;
+
+  background-color: tomato;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #f9f9fa;
+  font-weight: 500;
 }
