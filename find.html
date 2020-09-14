@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kakao clone</title>
+  </head>
+
+  <body>
+    <div class="out__status-bar">
+      <div id="status-bar">
+        <div class="statusbar__column">
+          <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+          <!-- wifi icon-->
+        </div>
+        <div class="statusbar__column">
+          <span>16:15</span>
+        </div>
+        <div class="statusbar__column">
+          <span>77%</span>
+          <i class="fas fa-battery-three-quarters fa-lg"></i>
+          <!-- battery icon -->
+          <i class="fas fa-bolt"></i>
+          <!-- lightning icon -->
+        </div>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <div class="screen-header__title">Find</div>
+      <div class="screen-header__icons">
+        <span>
+          <i class="fas fa-search fa-2x"></i>
+        </span>
+        <span class="screen-header__cog">
+          <i class="fas fa-cog fa-2x"></i>
+          <div class="screen-header__cog-dot"></div>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <!--  icons .top.-->
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fas fa-qrcode fa-2x"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fas fa-id-card-alt fa-2x"></i>
+          <span>Add by Contact</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fas fa-portrait fa-2x"></i>
+          <span>Add by Id</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fas fa-envelope-open-text fa-2x"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+      <!-- icons .bottom.-->
+      <!-- recommended friends .top.-->
+      <section class="recommended-friends">
+        <a
+          href="#"
+          id="refriends"
+          onclick="openNav()"
+          class="recommended-friends__icon"
+        >
+          <div id="show" class="recommended-friends__box"></div>
+
+          <h1>Show Recommended-Friends</h1>
+
+          <div id="user-in-find" class="user-in-find">
+            <!--friend row .start.-->
+            <div class="friend-screen__row">
+              <div class="user-component">
+                <div class="user-component__column">
+                  <img
+                    src="img/snape.jpg"
+                    class="usuer-component__avatar--sm"
+                  />
+                  <div class="user-component__text">
+                    <h4 class="user-component__title--sm">Snape</h4>
+                    <!-- <h6 class="user-component__subtitle">what the heck i am</h6> -->
+                  </div>
+                </div>
+              </div>
+              <div class="friends-screen__row__side">
+                +
+                <i class="fas fa-chevron-right xs"></i>
+              </div>
+            </div>
+            <!--friend row .end.-->
+            <!--friend row .start.-->
+            <div class="friend-screen__row user-in-find">
+              <div class="user-component">
+                <div class="user-component__column">
+                  <img
+                    src="img/black.jpg"
+                    class="usuer-component__avatar--sm"
+                  />
+                  <div class="user-component__text">
+                    <h4 class="user-component__title--sm">Black</h4>
+                    <!-- <h6 class="user-component__subtitle">what the heck i am</h6> -->
+                  </div>
+                </div>
+              </div>
+              <div class="friends-screen__row__side">
+                +
+                <i class="fas fa-chevron-right xs"></i>
+              </div>
+            </div>
+            <!--friend row .end.-->
+            <!--friend row .start.-->
+            <div class="friend-screen__row user-in-find">
+              <div class="user-component">
+                <div class="user-component__column">
+                  <img src="img/elli.jpg" class="usuer-component__avatar--sm" />
+                  <div class="user-component__text">
+                    <h4 class="user-component__title--sm">Elli</h4>
+                    <!-- <h6 class="user-component__subtitle">what the heck i am</h6> -->
+                  </div>
+                </div>
+              </div>
+              <div class="friends-screen__row__side">
+                +
+                <i class="fas fa-chevron-right xs"></i>
+              </div>
+            </div>
+            <!--friend row .end.-->
+            <!--friend row .start.-->
+            <div class="friend-screen__row user-in-find">
+              <div class="user-component">
+                <div class="user-component__column">
+                  <img src="img/mal.jpeg" class="usuer-component__avatar--sm" />
+                  <div class="user-component__text">
+                    <h4 class="user-component__title--sm">Malfoy</h4>
+                    <!-- <h6 class="user-component__subtitle">what the heck i am</h6> -->
+                  </div>
+                </div>
+              </div>
+              <div class="friends-screen__row__side">
+                +
+                <i class="fas fa-chevron-right xs"></i>
+              </div>
+            </div>
+            <!--friend row .end.-->
+          </div>
+        </a>
+      </section>
+
+      <!-- recommended friends .bottom.-->
+    </main>
+    <!-- user -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__a" href="friends.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__a" href="chat.html">
+            <span class="nav__notification">8</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__a" href="find.html"
+            ><i class="fas fa-circle fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__a" href="more.html">
+            <div class="nav__dotofellipsis"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="http://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      function openNav() {
+        document.getElementById("refriends").style.height = "360px";
+        document.getElementById("refriends").style.width = "100%";
+
+        document.getElementById("show").style.margin = "5px";
+        document.getElementById("show").style.borderRadius = "45%";
+        document.getElementById("user-in-find").style.marginTop = "70px";
+      }
+    </script>
+  </body>
+</html>

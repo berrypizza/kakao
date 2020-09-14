@@ -1,0 +1,106 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  border-bottom: 1px solid rgba(80, 68, 189, 0.2);
+
+  padding-bottom: 30px;
+}
+
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  background-color: #f9f9fa;
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: 1px 1px 2px 1px rgba(80, 60, 180, 0.2);
+
+  transition: all 0.4s cubic-bezier(0.8, 0, 0.15, 0.995);
+}
+
+.find-icons__icon:hover {
+  transform: scale(1.05);
+  transform: translate(-4px, -4px);
+  box-shadow: 2px 2px 5px 1px rgba(80, 60, 180, 0.3);
+}
+
+.find-icons__icon span {
+  padding-top: 8px;
+}
+
+.find-icons__icon i {
+  font-size: 35px;
+}
+
+/* recommended friends .top.*/
+.recommended-friends {
+  margin-top: 30px;
+  width: 100%;
+}
+.recommended-friends__icon {
+  height: 50px;
+  width: 50px;
+  background: #f9f9fa;
+  display: flex;
+  text-align: center;
+  transition: all 0.9s cubic-bezier(0.8, 0, 0.15, 0.995);
+  position: relative;
+  background: #f9f9fa;
+  box-shadow: 2px 2px 5px 1px rgba(80, 60, 180, 0.3);
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+.recommended-friends__box {
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  left: 5px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+.recommended-friends__icon i {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+
+.recommended-friends__icon h1 {
+  display: block;
+  position: absolute;
+  left: 58px;
+  top: 15px;
+  color: rgba(51, 48, 48, 0.5);
+  font-size: 18px;
+  font-weight: 600;
+  width: 250px;
+  justify-content: center;
+}
+
+.recommended-friends__icon:hover {
+  width: 100%;
+}
+.recommended-friends__box:hover {
+  transform: scale(0.9);
+}
+
+#user-in-find {
+  margin-top: 600px;
+  transition: 1.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  color: rgba(51, 48, 48, 0.5);
+  font-weight: 500;
+}
