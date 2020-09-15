@@ -42,6 +42,7 @@
 
 .user-component__title--sm {
   font-size: 15px;
+  margin-right: 10px;
 }
 
 .friends-screen__row__side-for-chat {
