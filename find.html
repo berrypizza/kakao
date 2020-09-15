@@ -66,9 +66,18 @@
       <section class="recommended-friends">
         <a
           href="#"
+          id="re-x"
+          onclick="closeNav()"
+          class="recommended-friends__x"
+        >
+          X
+        </a>
+        <div
+          href="#"
           id="refriends"
           onclick="openNav()"
           class="recommended-friends__icon"
+          style="background-color: var(--yellow)"
         >
           <div id="show" class="recommended-friends__box"></div>
 
@@ -150,10 +159,50 @@
             </div>
             <!--friend row .end.-->
           </div>
-        </a>
+        </div>
       </section>
-
       <!-- recommended friends .bottom.-->
+
+      <!-- open chat .top.-->
+      <section class="open-chat">
+        <div class="open-chat__header">
+          <span>Open Chat</span><span>Go to open chat home</span>
+        </div>
+
+        <div class="open-chat__row">
+          <div class="open-chat__tag">
+            <span>#HOGWARTS</span>
+            <span>#HOGWART#MAGICSCHOOL</span>
+            <div class="open-chat__user">
+              <img class="tag-img" src="img/mcgo.jpg" alt="TT" />
+              <span>McGonagall</span>
+              <span class="active">Active</span>
+            </div>
+          </div>
+
+          <div class="open-chat__tag-img">
+            <img src="img/hog.jpg" alt="TT" />
+            <div class="tag-img__heart">♥3622</div>
+          </div>
+        </div>
+        <div class="open-chat__row">
+          <div class="open-chat__tag">
+            <span>#GRYFFINDOR</span>
+            <span>#HOGWART#MAGICSCHOOL</span>
+            <div class="open-chat__user">
+              <img class="tag-img" src="img/hermione.jpg" alt="TT" />
+              <span>Hermione</span>
+              <span class="active">Active</span>
+            </div>
+          </div>
+
+          <div class="open-chat__tag-img">
+            <img src="img/gryffindor.jpg" alt="TT" />
+            <div class="tag-img__heart">♥1231</div>
+          </div>
+        </div>
+      </section>
+      <!-- open chat .bottom.-->
     </main>
     <!-- user -->
     <nav class="nav">
@@ -195,6 +244,14 @@
         document.getElementById("show").style.margin = "5px";
         document.getElementById("show").style.borderRadius = "45%";
         document.getElementById("user-in-find").style.marginTop = "70px";
+        document.getElementById("re-x").style.filter = "none";
+      }
+      function closeNav() {
+        document.getElementById("refriends").style.height = "50px";
+
+        document.getElementById("re-x").style.filter = "blur(2rem)";
+        document.getElementById("user-in-find").style.marginTop = "2500px";
+        document.getElementById("show").style.margin = "0px";
       }
     </script>
   </body>
