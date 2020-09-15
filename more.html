@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kakao clone</title>
+  </head>
+  <body>
+    <div class="out__status-bar">
+      <div id="status-bar">
+        <div class="statusbar__column">
+          <span>No Service</span>
+          <i class="fas fa-wifi"></i>
+          <!-- wifi icon-->
+        </div>
+        <div class="statusbar__column">
+          <span>16:15</span>
+        </div>
+        <div class="statusbar__column">
+          <span>77%</span>
+          <i class="fas fa-battery-three-quarters fa-lg"></i>
+          <!-- battery icon -->
+          <i class="fas fa-bolt"></i>
+          <!-- lightning icon -->
+        </div>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <div class="screen-header__title">More</div>
+      <div class="screen-header__icons">
+        <span>
+          <i class="fas fa-search fa-2x"></i>
+        </span>
+        <span>
+          <i class="fas fa-music fa-2x"></i>
+        </span>
+        <span>
+          <i class="fas fa-cog fa-2x"></i>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="img/harry.jpg" class="usuer-component__avatar--xl" />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Harry</h4>
+            <h6 class="user-component__subtitle">+85 10-4545-4545</h6>
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+
+      <!--  icons .top.-->
+      <div class="find-icons find-icons__more">
+        <div class="find-icons__icon more-icons">
+          <i class="fas fa-calendar-week fa-2x"></i>
+          <span>Calender</span>
+        </div>
+        <div class="find-icons__icon more-icons">
+          <i class="far fa-surprise fa-2x"></i>
+          <span>Emotions</span>
+        </div>
+        <div class="find-icons__icon more-icons">
+          <i class="fas fa-paint-roller fa-2x"></i>
+          <span>themes</span>
+        </div>
+        <div class="find-icons__icon more-icons">
+          <i class="fas fa-palette fa-2x"></i>
+          <span>Making</span>
+        </div>
+        <div class="find-icons__icon more-icons">
+          <i class="fas fa-portrait fa-2x"></i>
+          <span>Id</span>
+        </div>
+      </div>
+      <!-- icons .bottom.-->
+      <!-- sugestion .top.-->
+      <section class="more-suggestions">
+        <div class="more-suggestions__header">
+          <h1>More Sugertions</h1>
+        </div>
+        <!-- icon .top.-->
+        <div class="more-suggestions__icons">
+          <div class="more-suggertions__icons__icon">
+            <div class="more-suggertions__icons__icon__img">
+              <i class="fas fa-bacteria fa-4x"></i>
+            </div>
+            <span>killing virus</span>
+          </div>
+
+          <div class="more-suggertions__icons__icon">
+            <div
+              class="more-suggertions__icons__icon__img"
+              style="background: var(--yellow)"
+            >
+              <i class="fas fa-bacteria fa-4x"></i>
+            </div>
+            <span>learn virus magic</span>
+          </div>
+        </div>
+        <!-- icon .bottom.-->
+      </section>
+      <!-- sugestion .bottom.-->
+    </main>
+    <!-- user -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__a" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__a" href="chat.html">
+            <span class="nav__notification">8</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__a" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__a" href="more.html">
+            <div class="nav__dotofellipsis"></div>
+            <i class="fas fa-dot-circle fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="http://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
