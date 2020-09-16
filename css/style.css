@@ -8,6 +8,9 @@
 @import "components/user-component.css";
 @import "screens/find.css";
 @import "screens/more.css";
+@import "screens/settings.css";
+@import "components/alt-screen.css";
+@import "screens/chatroom.css";
 
 body {
   color: #2e363e;
