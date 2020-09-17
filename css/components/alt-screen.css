@@ -4,6 +4,11 @@
   align-items: center;
   font-size: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(203, 197, 230);
+  z-index: 7;
 }
 
 .alt-header__column {
@@ -19,4 +24,14 @@
 .alt-header__column:nth-child(3) {
   display: flex;
   justify-content: flex-end;
+}
+.alt-header__column i {
+  margin-left: 15px;
+}
+
+.chat-screen {
+  height: 1100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

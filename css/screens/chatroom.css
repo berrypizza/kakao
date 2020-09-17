@@ -1,3 +1,136 @@
 #chat-screen {
   background: var(--jj);
 }
+
+.chat-time-stamp {
+  margin-top: 90px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-time-stamp h1 {
+  width: 300px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #f9f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.message-row {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.message-row__content {
+  margin-left: 10px;
+}
+.message__author {
+  opacity: 0.8;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  background: #f9f9fa;
+  border-radius: 10px;
+  border-top-left-radius: unset;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+.message__time {
+  margin-right: 10px;
+  font-size: 13px;
+}
+.message-row--own .message__bubble {
+  background: var(--yellow);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #f9f9fa;
+  box-sizing: border-box;
+}
+
+.reply__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.reply__column:first-child {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.reply__column:nth-child(2) {
+  width: 100%;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.reply__column input {
+  width: 100%;
+  border-radius: 18px;
+  height: 36px;
+  background: #f9f9fab6;
+  border: none;
+  box-shadow: 2px 2px 5px 1px var(--jj);
+  padding-left: 10px;
+}
+.reply__column input:focus {
+  outline: none;
+}
+
+.reply__column:last-child i,
+.reply__column:last-child button {
+  position: absolute;
+}
+
+.reply__column:last-child > i {
+  right: 45px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.reply__column:last-child button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 2px 2px 5px 1px var(--jj);
+  width: 30px;
+  height: 30px;
+  right: 5px;
+  background: var(--yellow);
+}
