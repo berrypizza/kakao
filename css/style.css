@@ -11,6 +11,7 @@
 @import "screens/settings.css";
 @import "components/alt-screen.css";
 @import "screens/chatroom.css";
+@import "no-mobile.css";
 
 body {
   color: #2e363e;
